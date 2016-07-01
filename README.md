@@ -1,10 +1,10 @@
-# jekyll-webpack-template
+# Jekyll Webpack Starter Project
 
-Starter project for getting nice PostCSS webpack build into a simple jekyll static site.
+Are you like me? Love Jekyll but hate `sass`? Here is a little project to get you going with a nice PostCSS webpack build into a simple jekyll static site.
 
-- no `_posts`: no blog by default
-- no `javascript`: the webpack build is for `css` only
-- menu helper include
+- no `_posts`: no blog by default.
+- no `javascript`: the webpack build is for `css` only.
+- menu helper include to aid in navigation, something `jekyll` isn't super good at.
 
 Built with `jekyll` and `webpack`. The layout and menu is in `_includes` and `_layouts`. CSS is built with `PostCSS` and is located in `_css` [ignore the `.js` file, it's just so `webpack` understands the dependency tree].
 
