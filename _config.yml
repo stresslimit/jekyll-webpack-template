@@ -1,0 +1,3 @@
+# Build settings
+exclude: [node_modules, package.json, webpack.config.js, Gemfile, Gemfile.lock, README.md]
+permalink: /:title/

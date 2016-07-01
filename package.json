@@ -1,0 +1,28 @@
+{
+  "name": "jekyll-webpack-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev-webpack ; npm run dev-jekyll",
+    "dev-jekyll": "jekyll serve --watch",
+    "dev-webpack": "webpack --progress --watch",
+    "build": "webpack && jekyll build",
+    "deploy": "npm run build && aws s3 sync _site s3://your-bucket --acl public-read --delete"
+  },
+  "author": "@stresslimit",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "css-loader": "^0.23.1",
+    "csswring": "^5.0.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "postcss-cssnext": "^2.6.0",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-import": "^8.1.2",
+    "postcss-loader": "^0.9.1",
+    "postcss-nested": "^1.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
+}
