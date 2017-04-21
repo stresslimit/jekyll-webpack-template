@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "your-stage",
+    "stage": "your-stage",
+    "production": "your-production"
+  }
+}

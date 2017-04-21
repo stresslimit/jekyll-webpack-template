@@ -1,4 +1,6 @@
 .jekyll-metadata
-out.js
+.DS_Store
+assets/css/*.js
 node_modules
+out.js
 *.map

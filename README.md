@@ -6,27 +6,29 @@ Are you like me? Love Jekyll but hate SASS? Here is a little project to get you 
 - no `javascript`: the webpack build is for `css` only.
 - menu helper include to aid in navigation, something `jekyll` isn't super good at.
 
-Built with `jekyll` and `webpack`. The layout and menu is in `_includes` and `_layouts`. CSS is built with `PostCSS` and is located in `_css` [ignore the `.js` file, it's just so `webpack` understands the dependency tree].
+Built with `jekyll` and `webpack`. The layout and menu is in `_includes` and `_layouts`. CSS is built with `PostCSS` and is located in `_css`. Static assets like images and fonts should be in `_assets`.
 
 
 # Development
 
 ### Setup
 
-Requires `ruby` with `rubygems`, `node` with `npm`
+Requires `ruby` with `rubygems`, `node` and `yarn`
 
 1. `gem install jekyll`
-1. `npm i`
+1. `yarn install`
 
 
 ### Local Development
 
 This needs to be better, but works for now.
 
-1. `npm run dev-webpack` in one terminal window
-1. `npm run dev-jekyll` in another
+1. `yarn run dev-webpack` in one terminal window
+1. `yarn run dev-jekyll` in another
 
 
 ### Deploy
 
-Needs to be set up with AWS S3 keys, then just run `npm run deploy` and up it goes!
+Set up your favourite static site hosting, I used to run S3 but now I'm all Firebase Hosting.
+
+So now it’s set up for firebase, just run `yarn run deploy-stage` or `yarn run deploy-production`.

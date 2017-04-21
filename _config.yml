@@ -1,3 +1,13 @@
 # Build settings
-exclude: [node_modules, package.json, webpack.config.js, Gemfile, Gemfile.lock, README.md]
+exclude: [
+  README.md,
+  firebase.json,
+  Gemfile,
+  Gemfile.lock,
+  node_modules,
+  package.json,
+  postcss.config.js,
+  webpack.config.babel.js,
+  yarn.lock
+]
 permalink: /:title/
