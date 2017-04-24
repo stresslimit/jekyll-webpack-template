@@ -16,6 +16,7 @@ Built with `jekyll` and `webpack`. The layout and menu is in `_includes` and `_l
 Requires `ruby` with `rubygems`, `node` and `yarn`
 
 1. `gem install jekyll`
+1. `bundle install`
 1. `yarn install`
 
 

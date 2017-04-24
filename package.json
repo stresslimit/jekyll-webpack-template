@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "scripts": {
-    "dev-jekyll": "jekyll serve --watch",
+    "dev-jekyll": "jekyll serve --livereload",
     "dev-webpack": "yarn run copy-assets && webpack --watch",
     "copy-assets": "rm -rf assets && rsync _assets/ assets/ -av",
     "dist": "yarn run copy-assets && webpack && jekyll build",
