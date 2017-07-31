@@ -5,8 +5,7 @@ module.exports = {
     },
     'postcss-import': {},
     'postcss-custom-properties': {},
-    'postcss-nested': {},
-    'postcss-extend': {},
+    'postcss-custom-media': {},
     'csswring': {},
   },
 }

@@ -1,4 +1,7 @@
 # Build settings
+# include: [
+#   _pages
+# ]
 exclude: [
   README.md,
   firebase.json,
