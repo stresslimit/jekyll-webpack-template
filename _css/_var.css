@@ -1,4 +1,9 @@
 :root {
+
   --text-color: #444;
   --unit: 15px;
+
+  --black: #000000;
+  --dark-grey: #848484;
+
 }

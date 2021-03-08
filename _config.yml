@@ -1,16 +1,23 @@
 # Build settings
-# include: [
-#   _pages
-# ]
+include: [
+  _pages
+]
 exclude: [
   README.md,
   firebase.json,
+  gemfiles/,
   Gemfile,
   Gemfile.lock,
-  node_modules,
+  node_modules/,
   package.json,
   postcss.config.js,
+  webpack.config.js,
   webpack.config.babel.js,
+  vendor/,
+  vendor/bundle/,
+  vendor/cache/,
+  vendor/gems/,
+  vendor/ruby/,
   yarn.lock
 ]
 permalink: /:title/

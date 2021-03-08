@@ -1,0 +1,22 @@
+.on-dark-bg {
+  color: white;
+}
+/* . {
+  color: var(--);
+} */
+.dark-grey {
+  color: var(--dark-grey);
+}
+
+
+/* Backgrounds
+*/
+/* . {
+  background: var(--) !important;
+} */
+.bg-black {
+  background: var(--black) !important;
+}
+.bg-dark-grey {
+  background: var(--dark-grey) !important;
+}
