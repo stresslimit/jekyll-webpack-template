@@ -4,13 +4,10 @@
   "description": "",
   "scripts": {
     "dev": "bundle exec jekyll serve --livereload",
-    "dev-webpack": "yarn run copy-assets && webpack --watch",
-    "copy-assets": "rm -rf assets && rsync _assets/ assets/ -av",
-    "dist": "yarn run copy-assets && webpack && jekyll build",
-    "deploy-stage": "yarn run dist && yarn run sync-stage",
-    "deploy-production": "yarn run dist && yarn run sync-production",
-    "sync-stage": "firebase use stage && firebase deploy",
-    "sync-production": "firebase deploy -P production"
+    "dev-webpack": "yarn copy-assets && webpack --watch",
+    "copy-assets": "rsync _assets/ assets/ --exclude=.DS_Store -av --delete",
+    "dist": "export NODE_ENV=production; yarn copy-assets && webpack && bundle exec jekyll build",
+    "deploy": "yarn dist && firebase deploy"
   },
   "author": "@stresslimit",
   "license": "ISC",
